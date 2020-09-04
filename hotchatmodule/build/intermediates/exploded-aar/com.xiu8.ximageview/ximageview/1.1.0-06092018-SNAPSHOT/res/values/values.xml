@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundAngleImageView"><attr format="dimension" name="roundWidth"/><attr format="dimension" name="roundHeight"/></declare-styleable>
+    <declare-styleable name="XImageView"><attr format="dimension" name="XRound"/><attr format="dimension" name="leftTopRound"/><attr format="dimension" name="leftBottomRound"/><attr format="dimension" name="rightTopRound"/><attr format="dimension" name="rightBottomRound"/><attr format="enum" name="type">
+            <enum name="circle" value="1"/>
+            <enum name="round" value="2"/>
+        </attr></declare-styleable>
+    <string name="app_name">XImageView</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-4.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/IMKit" />
+            <option value="$PROJECT_DIR$/IMLib" />
+            <option value="$PROJECT_DIR$/addfriendbundle" />
+            <option value="$PROJECT_DIR$/annmodule" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/contactsmodule" />
+            <option value="$PROJECT_DIR$/hotchatbundle" />
+            <option value="$PROJECT_DIR$/hotchatmodule" />
+            <option value="$PROJECT_DIR$/imlibrary" />
+            <option value="$PROJECT_DIR$/kbmodel" />
+            <option value="$PROJECT_DIR$/ksy" />
+            <option value="$PROJECT_DIR$/loginbundle" />
+            <option value="$PROJECT_DIR$/mediabundle" />
+            <option value="$PROJECT_DIR$/msgbundle" />
+            <option value="$PROJECT_DIR$/prombundle" />
+            <option value="$PROJECT_DIR$/prommodule" />
+            <option value="$PROJECT_DIR$/publiclibrary" />
+            <option value="$PROJECT_DIR$/publicresource" />
+            <option value="$PROJECT_DIR$/recommendbundle" />
+            <option value="$PROJECT_DIR$/reportmodule" />
+            <option value="$PROJECT_DIR$/searchbundle" />
+            <option value="$PROJECT_DIR$/seekdb" />
+            <option value="$PROJECT_DIR$/systemmodule" />
+            <option value="$PROJECT_DIR$/updatebundle" />
+            <option value="$PROJECT_DIR$/userbundle" />
+            <option value="$PROJECT_DIR$/usermodule" />
+            <option value="$PROJECT_DIR$/web" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+       style="@style/MatchWarp"
+        android:layout_marginTop="26dp"
+        android:paddingLeft="15dp"
+        >
+        <TextView
+            android:id="@+id/mybi"
+           style="@style/WarpWarp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:text="我的K币"
+            />
+        <TextView
+            android:id="@+id/kbdetail_headlayout_minekNumTxt"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/mybi"
+           style="@style/WarpWarp"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:text="0.00"
+            />
+
+        <TextView
+            android:id="@+id/kbdetail_headlayout_exchangeTxt"
+            style="@style/WarpWarp"
+            android:background="@drawable/shape_kb_to_exchange"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="13sp"
+            android:text="去兑换"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/MatchWarp"
+        android:background="@drawable/shape_kb_detail"
+
+        android:layout_marginTop="28dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="13dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:text="K币明细"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F1F3FA"
+        />
+</merge>

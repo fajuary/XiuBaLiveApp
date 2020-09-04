@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+apply plugin: 'newlens'
+group = 'com.xiu8.sample'
+version = getEnvValue("versionName", "1.2.0.test")
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        applicationId "com.seek"
+        versionCode 4
+        versionName version
+        ndk { abiFilters "armeabi-v7a" }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'xiubaMobile'
+            keyPassword 'xiu8xiuba'
+            storeFile file('tmp.keystore')
+            storePassword 'xiu8xiuba'
+            v2SigningEnabled false
+        }
+    }
+//    configurations {
+//        all*.exclude group: 'com.android.support', module: 'support-core-utils'
+//    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+        }
+
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+
+    packagingOptions {
+        doNotStrip '*/mips/*.so'
+        doNotStrip '*/mips64/*.so'
+    }
+
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+String getEnvValue(key, defValue) {
+    def val = System.getProperty(key)
+    if (null != val) {
+        return val
+    }
+    val = System.getenv(key)
+    if (null != val) {
+        return val
+    }
+    return defValue
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:support-annotations:26+'
+//        force 'com.android.support:design:26+'
+        force rootProject.ext.dependencies.v7_appcompat
+        force rootProject.ext.dependencies.v7_recyclerview
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test:runner:1.0.2'
+
+    compile rootProject.ext.dependencies.v7_appcompat
+    compile rootProject.ext.dependencies.constraint_layout
+    compile rootProject.ext.dependencies.support_multidex
+    compile rootProject.ext.dependencies.xiu8_oss//上传功能
+    compile rootProject.ext.dependencies.media_lib
+    compile rootProject.ext.dependencies.badgebutton
+
+    //compile 的地方
+    compile project(':publicresource')
+    compile project(':publiclibrary')
+    compile project(':usermodule')
+    compile project(':imlibrary')
+    compile project(':loginbundle')
+    compile project(':userbundle')
+    compile project(':hotchatbundle')
+    compile project(':mediabundle')
+    compile project(':recommendbundle')
+    compile project(':web')
+    compile project(':updatebundle')
+    compile project(':msgbundle')
+    compile project(':contactsmodule')
+    compile project(':prombundle')
+    compile rootProject.ext.dependencies.nbs_agent
+
+}
+apply from: "./../dependencie_other.gradle"

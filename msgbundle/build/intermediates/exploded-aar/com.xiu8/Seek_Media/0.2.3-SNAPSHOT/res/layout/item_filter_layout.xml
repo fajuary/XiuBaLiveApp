@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.seek.media.record.view.filter.TXHorizontalPickerView
+        android:id="@+id/secondGradePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="12dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@android:id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </com.seek.media.record.view.filter.TXHorizontalPickerView>
+    <!--<ImageView-->
+    <!--android:id="@+id/filter_image"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/transparent"-->
+    <!--android:paddingRight="5dp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/filter_image_tint"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/filter_selected"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:visibility="invisible" />-->
+
+</FrameLayout>

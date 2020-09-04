@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IMKit/IMKit.iml" filepath="$PROJECT_DIR$/IMKit/IMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMLib/IMLib.iml" filepath="$PROJECT_DIR$/IMLib/IMLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XiuSeekApp.iml" filepath="$PROJECT_DIR$/XiuSeekApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/addfriendbundle/addfriendbundle.iml" filepath="$PROJECT_DIR$/addfriendbundle/addfriendbundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annmodule/annmodule.iml" filepath="$PROJECT_DIR$/annmodule/annmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contactsmodule/contactsmodule.iml" filepath="$PROJECT_DIR$/contactsmodule/contactsmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hotchatbundle/hotchatbundle.iml" filepath="$PROJECT_DIR$/hotchatbundle/hotchatbundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hotchatmodule/hotchatmodule.iml" filepath="$PROJECT_DIR$/hotchatmodule/hotchatmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imlibrary/imlibrary.iml" filepath="$PROJECT_DIR$/imlibrary/imlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kbmodel/kbmodel.iml" filepath="$PROJECT_DIR$/kbmodel/kbmodel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksy/ksy.iml" filepath="$PROJECT_DIR$/ksy/ksy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loginbundle/loginbundle.iml" filepath="$PROJECT_DIR$/loginbundle/loginbundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mediabundle/mediabundle.iml" filepath="$PROJECT_DIR$/mediabundle/mediabundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msgbundle/msgbundle.iml" filepath="$PROJECT_DIR$/msgbundle/msgbundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prombundle/prombundle.iml" filepath="$PROJECT_DIR$/prombundle/prombundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prommodule/prommodule.iml" filepath="$PROJECT_DIR$/prommodule/prommodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/publiclibrary/publiclibrary.iml" filepath="$PROJECT_DIR$/publiclibrary/publiclibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/publicresource/publicresource.iml" filepath="$PROJECT_DIR$/publicresource/publicresource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recommendbundle/recommendbundle.iml" filepath="$PROJECT_DIR$/recommendbundle/recommendbundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reportmodule/reportmodule.iml" filepath="$PROJECT_DIR$/reportmodule/reportmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/searchbundle/searchbundle.iml" filepath="$PROJECT_DIR$/searchbundle/searchbundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seekdb/seekdb.iml" filepath="$PROJECT_DIR$/seekdb/seekdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/systemmodule/systemmodule.iml" filepath="$PROJECT_DIR$/systemmodule/systemmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/updatebundle/updatebundle.iml" filepath="$PROJECT_DIR$/updatebundle/updatebundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userbundle/userbundle.iml" filepath="$PROJECT_DIR$/userbundle/userbundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usermodule/usermodule.iml" filepath="$PROJECT_DIR$/usermodule/usermodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+    </modules>
+  </component>
+</project>

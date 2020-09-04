@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:background="@drawable/ic_kb_default_background"
+
+    android:orientation="vertical">
+
+    <com.seek.library.widget.toolbar.SeekToolBar
+        android:id="@+id/kb_activity_mSeekToolBar"
+        style="@style/MatchWarp"
+        app:leftIcon="@drawable/common_btn_back_white"
+        app:centerTitleText="">
+        <TextView
+            android:id="@+id/kb_activity_morekbTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="14dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:text="获取更多K币"/>
+    </com.seek.library.widget.toolbar.SeekToolBar>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/kb_activity_mSmartRefreshLayout"
+        style="@style/MatchMatch">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <include layout="@layout/kbdetail_head_layout" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/kb_activity_mRecyclerView"
+               style="@style/MatchMatch"
+                android:background="@color/colorWhite" />
+
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

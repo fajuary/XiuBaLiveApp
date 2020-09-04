@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_kb_default_background">
+
+    <com.seek.library.widget.toolbar.SeekToolBar
+        android:id="@+id/mToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon="@drawable/common_btn_back_white"
+        app:centerTitleText="兑换中心">
+        <TextView
+            android:id="@+id/mCustomerBtn"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="right"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:text="客服中心"/>
+    </com.seek.library.widget.toolbar.SeekToolBar>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/mRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

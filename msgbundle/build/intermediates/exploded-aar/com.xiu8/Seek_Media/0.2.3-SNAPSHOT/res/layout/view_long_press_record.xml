@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="85dp"
+    android:layout_height="85dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:src="@drawable/circular" />
+
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/media_record_donut_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:rotation="-90"
+        custom:donut_finished_color="#FF22B6FE"
+        custom:donut_finished_stroke_width="8dp"
+        custom:donut_show_text="false"
+        custom:donut_unfinished_color="#80FFFFFF"
+        custom:donut_unfinished_stroke_width="8dp"
+        tools:donut_progress="100" />
+
+</RelativeLayout>

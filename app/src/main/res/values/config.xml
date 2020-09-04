@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- 正式环境为 tingyun.33023-->
+    <!-- 开发环境为 tingyun.33021-->
+    <string name="scheme_nbs">tingyun.33023</string>
+    <!-- 正式环境为 5e4444dde67d4e809a5266d83ba3cb6e-->
+    <!-- 开发环境为f454230734644263916e8313bd6985a7-->
+    <string name="appKey_nbs">5e4444dde67d4e809a5266d83ba3cb6e</string>
+</resources>

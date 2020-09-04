@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/apply_friend_item_bg"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <com.xiu8.ximageview.XImageView
+            android:id="@+id/xiv_kb_task_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/xiv_kb_task_icon"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_kb_task_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/msg_black_nick"
+                android:textSize="16sp"
+                tools:text="邀请好友" />
+
+            <TextView
+                android:id="@+id/tv_kb_task_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorHintText"
+                android:textSize="16sp"
+                tools:text="好友需下载注册并拨打随机电话累计5分钟，每邀
+请1人+300K币，已邀请x人你邀请的好友再去邀
+请其他好友+100K币" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_kb_task_award"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#FF22B6FE"
+                    android:textSize="16sp"
+                    tools:text="+300K币" />
+
+                <TextView
+                    android:id="@+id/tv_kb_task_finish"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/select_kb_task_finish"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:textColor="@drawable/select_kb_task_color_finish"
+                    android:textSize="13sp"
+                    tools:text="立即前往" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

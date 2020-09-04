@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ezy.ui.view.BadgeButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:drawableTop="@drawable/selector_home_find"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        app:btnBadgeHeight="12dp"
+        app:btnBadgeVisible="false" />
+
+    <ezy.ui.view.BadgeButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/selector_home_hot_chat"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        app:btnBadgeVisible="false" />
+
+    <ezy.ui.view.BadgeButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:btnBadgeColor="#ff0000"
+        android:layout_alignParentEnd="true"
+        android:drawableTop="@drawable/selector_home_message"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        app:btnBadgeVisible="false" />
+
+</merge>

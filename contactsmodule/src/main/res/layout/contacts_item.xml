@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp680"
+    android:layout_height="@dimen/dp164"
+    android:layout_gravity="center_horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/dp30"
+    android:layout_marginRight="@dimen/dp30"
+    android:layout_marginTop="@dimen/dp10"
+    android:layout_marginBottom="@dimen/dp10"
+    android:background="@drawable/shape_contacts_item_bg"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/contacts_friends_user_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#19191A"
+            android:textSize="@dimen/dp34"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp30"
+            android:textStyle="bold"
+            tools:text="兔小仙er"/>
+        <TextView
+            android:id="@+id/contacts_friends_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#A0A1AA"
+            android:textSize="@dimen/dp34"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp30"
+            android:textStyle="bold"
+            tools:text="18911765124"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/contacts_friends_tv_invitation"
+        android:layout_width="@dimen/dp156"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginRight="@dimen/dp31"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/dp26"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:background="@drawable/shape_find_friends_item_add_bg"/>
+
+
+</LinearLayout>

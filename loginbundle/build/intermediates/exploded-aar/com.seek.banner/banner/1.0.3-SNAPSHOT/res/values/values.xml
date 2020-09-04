@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#aa000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorYellow">#ff0</color>
+    <declare-styleable name="BannerLayout"><attr format="integer" name="banner_delay_time"/><attr format="boolean" name="banner_start_rotation"/><attr format="boolean" name="banner_view_pager_touch_mode"/><attr format="integer" name="banner_duration"/><attr format="boolean" name="banner_isVertical"/><attr format="boolean" name="banner_dots_visible"/><attr format="reference" name="banner_dots_selector"/><attr format="integer" name="banner_dots_left_margin"/><attr format="integer" name="banner_dots_right_margin"/><attr format="integer" name="banner_dots_width"/><attr format="integer" name="banner_dots_height"/><attr format="float" name="banner_enabledRadius"/><attr format="float" name="banner_normalRadius"/><attr format="color" name="banner_enabledColor"/><attr format="color" name="banner_normalColor"/><attr format="boolean" name="banner_is_tips_background"/><attr format="color" name="banner_tips_background"/><attr format="integer" name="banner_tips_width">
+            <enum name="match_parent" value="-1"/>
+            <enum name="wrap_content" value="-2"/>
+        </attr><attr format="integer" name="banner_tips_height">
+            <enum name="match_parent" value="-1"/>
+            <enum name="wrap_content" value="-2"/>
+        </attr><attr format="reference" name="banner_glide_error_image"/><attr format="reference" name="banner_glide_place_image"/><attr format="boolean" name="banner_title_visible"/><attr format="dimension" name="banner_title_size"/><attr format="color" name="banner_title_color"/><attr format="integer" name="banner_title_width"/><attr format="integer" name="banner_title_height"/><attr format="integer" name="banner_title_left_margin"/><attr format="integer" name="banner_title_right_margin"/><attr format="float" name="banner_page_num_radius"/><attr format="integer" name="banner_page_num_paddingTop"/><attr format="integer" name="banner_page_num_paddingLeft"/><attr format="integer" name="banner_page_num_paddingRight"/><attr format="integer" name="banner_page_num_paddingBottom"/><attr format="integer" name="banner_page_num_marginTop"/><attr format="integer" name="banner_page_num_marginLeft"/><attr format="integer" name="banner_page_num_marginRight"/><attr format="integer" name="banner_page_num_marginBottom"/><attr format="color" name="banner_page_num_textColor"/><attr format="color" name="banner_page_num_BackgroundColor"/><attr format="dimension" name="banner_page_num_textSize"/><attr format="string" name="banner_page_num_mark"/><attr name="banner_pageNum_site">
+            <enum name="topLeft" value="0"/>
+            <enum name="topRight" value="1"/>
+            <enum name="bottomLeft" value="2"/>
+            <enum name="bottomRight" value="3"/>
+            <enum name="centerLeft" value="4"/>
+            <enum name="centerRight" value="5"/>
+            <enum name="topCenter" value="6"/>
+            <enum name="bottomCenter" value="7"/>
+        </attr><attr name="banner_tips_site">
+            <enum name="top" value="10"/>
+            <enum name="bottom" value="12"/>
+            <enum name="center" value="13"/>
+        </attr><attr name="banner_dots_site">
+            <enum name="left" value="9"/>
+            <enum name="center" value="13"/>
+            <enum name="right" value="11"/>
+        </attr><attr name="banner_title_site">
+            <enum name="left" value="9"/>
+            <enum name="center" value="13"/>
+            <enum name="right" value="11"/>
+        </attr></declare-styleable>
+    <string name="app_name">BannerLayout</string>
+    <string name="array_null">the imageArray is null</string>
+    <string name="array_null_">the imageArrayTitle is null</string>
+    <string name="array_size_lnconsistent">Check the url and title number inconsistencies, please confirm the data</string>
+    <string name="bannerTransformer_null">the BannerAnimation is null</string>
+    <string name="glide_excpetion">glide placeImage or errorImage is null</string>
+    <string name="list_null">the imageList is null or imageList.Size zero</string>
+    <string name="vertical">If it is a vertical slide can not set the animation</string>
+</resources>

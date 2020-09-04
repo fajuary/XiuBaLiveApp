@@ -1,0 +1,7 @@
+int attr ios 0x7f010001
+int attr leftSwipe 0x7f010002
+int attr swipeEnable 0x7f010000
+int[] styleable SwipeMenuLayout { 0x7f010000, 0x7f010001, 0x7f010002 }
+int styleable SwipeMenuLayout_ios 1
+int styleable SwipeMenuLayout_leftSwipe 2
+int styleable SwipeMenuLayout_swipeEnable 0

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="5dp"
+    tools:layout_marginLeft="10dp"
+    tools:layout_marginRight="10dp"
+    android:background="@drawable/kb_mall_goods_item_bg">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="115dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/kb_mall_icon_bg"
+        tools:src="#FFD2FF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="17dp"
+        android:paddingRight="6dp"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                tools:text="Seek文化衫"/>
+            
+            <TextView
+                android:id="@+id/stock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="#22B6FE"
+                tools:text="666剩余"/>
+            
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="#A0A1AA"
+            tools:text="穿我们衣服的人，股市大赚，职场得 意。单身的桃花泛滥，结婚的幸福美 满，你等啥呢？"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/saleCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:textColor="#22B6FE"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"
+                    tools:text="999人兑换"/>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:textColor="#22B6FE"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"
+                    tools:text="价值:8888"
+                    android:gravity="bottom"/>
+
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/exchange"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:background="@drawable/kb_mall_exchange_bg"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="立即兑换"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

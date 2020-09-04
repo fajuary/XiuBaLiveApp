@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3000000"
+    android:orientation="vertical">
+    <com.seek.library.widget.toolbar.SeekToolBarContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp90"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp35"
+            android:paddingRight="@dimen/dp35">
+            <ImageView
+                android:layout_width="@dimen/dp52"
+                android:layout_height="@dimen/dp52"
+                android:scaleType="centerInside"
+                android:src="@drawable/find_friends_search" />
+            <EditText
+                android:id="@+id/contacts_friends_edi_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSearch"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_weight="1"
+                android:hint="搜索"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColor="#d9FFFFFF"
+                android:textColorHint="#d9FFFFFF"
+                android:textSize="@dimen/dp36"
+                android:background="@null"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/contacts_friends_iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/find_friends_clean"
+                />
+            <TextView
+                android:id="@+id/contacts_friends_tv_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp52"
+                android:text="清空"
+                android:textSize="@dimen/dp36"
+                android:gravity="right"
+                android:textColor="#d9FFFFFF"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </com.seek.library.widget.toolbar.SeekToolBarContainer>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#66A4A4A4"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/contacts_friends_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/contacts_friends_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="#000000">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/media_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <FrameLayout
+        android:id="@+id/media_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/media_rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/media_filter_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/ic_media_filter_back"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/media_switch_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_switch_camera" />
+
+        <ImageView
+            android:id="@+id/media_toggle_torch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/media_switch_camera"
+            android:padding="10dp"
+            android:src="@drawable/ic_toggle_torch" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/media_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/media_tv_record_hint">
+
+        <ImageView
+            android:id="@+id/media_record_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/media_long_press_record_view"
+            android:paddingBottom="28dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="28dp"
+            android:src="@drawable/ic_record_back" />
+
+        <com.seek.media.record.view.LongPressRecordView
+            android:id="@+id/media_long_press_record_view"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:id="@+id/media_beauty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/media_long_press_record_view"
+            android:paddingBottom="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_media_beauty" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/media_tv_record_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text="长按进行录制"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp" />
+
+
+    <com.seek.media.record.view.filter.BeautySettingPannel
+        android:id="@+id/media_beauty_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:visibility="gone" />
+
+
+</merge>

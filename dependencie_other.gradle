@@ -1,0 +1,18 @@
+dependencies {
+    compile rootProject.ext.dependencies.xiu8_share
+    compile rootProject.ext.dependencies.seek_baseadapter
+    compile rootProject.ext.dependencies.circleimageview
+    compile rootProject.ext.dependencies.xiu8_banner
+    compile rootProject.ext.dependencies.xiu8_zxing
+    compile rootProject.ext.dependencies.xiu8_adapter
+    compile rootProject.ext.dependencies.seek_swipemenu
+
+    compile rootProject.ext.dependencies.seek_ximageview
+    compile rootProject.ext.dependencies.seek_ximageload
+    compile rootProject.ext.dependencies.seek_picker
+
+    compile rootProject.ext.dependencies.seek_photoview
+    compile rootProject.ext.dependencies.media_lib
+    compile rootProject.ext.dependencies.record_view
+    compile rootProject.ext.dependencies.v7_cardview
+}
